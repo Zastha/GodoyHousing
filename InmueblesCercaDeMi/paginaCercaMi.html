@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilosCercaDeMi.css">
+  <title>Crear Inmueble</title>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- Leaflet JS (solo una carga necesaria) -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <div class="nav-left">
+        <div class="center-content">
+          <img src="imagenes/logo-GH 2 1.png" alt="Logo de Godoy Housing">
+          <span>Cerca de mi</span>
+        </div>
+      </div>
+
+      <ul class="nav-right">
+        <li><a href="#" class="nav-link">Inicio</a></li>
+        <li><a href="#" class="nav-link">Mis Inmuebles</a></li>
+        <li><a href="#" class="nav-link">Contáctanos</a></li>
+        <li><a href="#" class="logout-button">Cerrar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <!-- Lista de inmuebles a la izquierda -->
+      <aside class="property-list">
+        <h2>Inmuebles cerca de ti</h2>
+        <ul id="property-list">
+          <!-- Los inmuebles se agregarán aquí dinámicamente -->
+        </ul>
+      </aside>
+
+      <!-- Mapa a la derecha -->
+      <section class="map-section">
+        <div class="map-container">
+          <input id="location-input" type="text" placeholder="Ingresa una ubicación" />
+          <button id="search-location">Buscar Ubicación</button>
+          <div id="map"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>©2024 Godoy Housing, Inc. · <a href="#">Privacidad</a> · <a href="#">Términos</a> · <a href="#">Información de la compañía</a></p>
+  </footer>
+
+  <script src="scripts/mapa.js"></script>
+</body>
+
+</html>
