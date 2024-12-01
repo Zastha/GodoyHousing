@@ -1,0 +1,162 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  /* Header */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #d9d9d9;
+}
+#Logo{
+  width: 80px;
+  height: auto;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaciado entre el logo y el texto */
+}
+
+.center-content img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+  
+}
+.center-content {
+  display: flex;
+  align-items: center; /* Asegura que el texto y el logo estén alineados */
+}
+.center-content span {
+  border-radius: 8px;
+  padding: 5px 10px;
+  background: #3ca2a2;
+  color: white;
+  font-weight: 600;
+  
+}
+
+.nav-right {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav-link,
+.logout-button {
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: black;
+  font-weight: 600;
+}
+#LogOut{
+  color: white;
+}
+.nav-link {
+  background-color: #92c7a3;
+}
+
+.logout-button {
+  background-color: #215a6d;
+}
+/*Fin Header*/
+
+
+
+  /* Resto de la pagina */
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .properties {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .property-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .property-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .property-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .property-info {
+    padding: 15px;
+  }
+  
+  .property-info h2 {
+    margin: 0;
+    color: #333;
+    font-size: 1.2em;
+  }
+  
+  .property-info p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .property-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  .add-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    color: #aaa;
+    border: 2px dashed #ddd;
+    cursor: pointer;
+  }
+  
+  .add-card:hover {
+    background: #f0f0f0;
+    color: #333;
+  }
+#boton{
+  width: 140px;
+  height: 140px;
+}  
+a {
+  text-decoration: none;
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+}

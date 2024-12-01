@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tus Bienes Inmuebles</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Enlace a la biblioteca de Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet"></head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav-left">
+                <div class="center-content">
+                    <img src="logo-GH 2 1.png" alt="Logo" id="Logo">
+                    <span id="Cerca">Cerca de mi</span>
+                </div>
+            </div>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-right">
+              <li><a href="#" class="nav-link">Inicio</a></li>
+              <li><a href="#" class="nav-link">Contratos</a></li>
+              <li><a href="#" class="nav-link">Citas</a></li>
+              <li><a href="#" class="nav-link">Inmuebles</a></li>
+              <li><a href="#" class="logout-button" id="LogOut">Cerrar sesión</a></li>
+          </ul>
+        </nav>
+    </header>
+
+<section class="main">
+
+    <div class="container">
+        <h1>Inmuebles Asignados:</h1>
+        <div class="properties">
+          <!-- Card 1 -->
+          <a href="../paginaInmuebleAsesor/paginaInmuebleAsesor.html">
+            <div class="property-card">
+            <img src="dillon-kydd-XGvwt544g8k-unsplash 1.png" alt="Álvaro Obregón"> 
+            <div class="property-info">
+              <h2>$9,000,000</h2>
+              <p>Álvaro Obregón</p>
+              <p>Plaza Citropoli 880, Cn. Rosales, Sin.</p>
+              <ul>
+                <li><i class="fas fa-bed"></i> 3 Cuartos</li>
+                <li><i class="fas fa-bath"></i> 2 Baños</li>
+                <li><i class="fas fa-ruler-combined"></i> 67 m²</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+          <!-- Card 2 -->
+          <div class="property-card">
+            <img src="pexels-binyamin-mellish-106399 1.png" alt="Evergreen Terrace"> 
+            <div class="property-info">
+              <h2>$2,700/month</h2>
+              <p>Evergreen Terrace</p>
+              <p>742 Cafindas, Cn. Sin.</p>
+              <ul>
+                <li><i class="fas fa-bed"></i> 4 Cuartos</li>
+                <li><i class="fas fa-bath"></i> 2 Baños</li>
+                <li><i class="fas fa-ruler-combined"></i> 67 m²</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="property-card">
+            <img src="r-architecture-0tKCSyLXqQM-unsplash 1.png" alt="Tarpon Bay"> 
+            <div class="property-info">
+              <h2>$1,600/month</h2>
+              <p>Tarpon Bay</p>
+              <p>Zona Rosales, Cn. Sin.</p>
+              <ul>
+                <li><i class="fas fa-bed"></i> 3 Cuartos</li>
+                <li><i class="fas fa-bath"></i> 1 Baño</li>
+                <li><i class="fas fa-ruler-combined"></i> 57 m²</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h1 id="CC">Calendario de Citas:</h1>
+      <div class="calendar-container">
+        <div id="calendar"></div>
+        <div class="details-panel">
+            <h3>Citas del Día</h3>
+            <div id="today-appointments"></div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Detalles de las Citas</h3>
+            <div id="modal-details"></div>
+        </div>
+    </div>
+  
+
+</section>
+
+
+    <footer class="footer">
+        <div class="godoy-housing-inc">©2024 Godoy Housing, Inc. · Privacidad · Terminos · Informacion de la compañia</div>
+        <img class="redes-sociales-1" alt="" src="Redes Sociales 1.png">
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+
+    <script src="calendar.js"></script>
+</body>
