@@ -59,6 +59,25 @@ body {
   background-color: #215a6d;
 }
 
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.create-publication-button {
+  padding: 10px 20px;
+  background-color: #2ecc71; /* Color verde */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-publication-button:hover {
+  background-color: #27ae60; /* Color verde oscuro */
+}
+
 /* Main Content */
 .main-content {
   padding: 32px;
