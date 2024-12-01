@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tus Contratos</title>
+    <link rel="stylesheet" href="TusContratos.css">
+</head>
+<body>
+    <!-- Header -->
+    <!-- <header>
+        <nav class="nav">
+            <div class="nav-left">
+                <div class="center-content">
+                    <img src="../generales/logo-GH 2 1.png" alt="Logo" id="Logo">
+                    <span id="Cerca">Cerca de mi</span>
+                </div>
+            </div>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-right">
+                <li><a href="#" class="nav-link">Inicio</a></li>
+                <li><a href="#" class="nav-link">Contratos</a></li>
+                <li><a href="#" class="nav-link">Citas</a></li>
+                <li><a href="#" class="nav-link">Inmuebles</a></li>
+                <li><a href="#" class="logout-button" id="LogOut">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <header>
+        <nav class="vista-cliente nav">
+            <ul class="ul1">
+                <li class="center-content">
+                    <a href="../LandingPage/LandingPage.html"><img src="imagenes/logo-GH 2 1.png" alt=""></a>
+                    <span>Cerca de mi</span>
+                </li>
+            </ul>
+            <ul class="ul2">
+                <a href="../LandingPage/LandingPage.html"><li class="navegacion">Inicio</li></a>
+                <a href="../TusContratos/TusContratos.HTML"><li class="navegacion">Contratos</li></a>
+                <a href=""><li class="navegacion">Citas</li></a>
+                <li class="navegacion">Inmuebles</li>
+                <a href="../landingPageRegistro/landingpageRegistro.html"><li class="cierraSesion">Cerrar sesion</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="title-container">
+            <h1 class="title">Tus contratos</h1>
+            <button class="add-btn" id="openModalBtn">+</button>
+        </div>
+        <table class="contract-table">
+            <thead>
+                <tr>
+                    <th>Contratos</th>
+                    <th>Asesor Inmobiliario</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>contrato_1.pdf</td>
+                    <td>Manolo</td>
+                    <td class="status pending">PENDIENTE</td>
+                    <td>2023/09/17</td>
+                </tr>
+                <tr>
+                    <td>contrato_1.pdf</td>
+                    <td>Manolo</td>
+                    <td class="status expired">VENCIDO</td>
+                    <td>2023/09/17</td>
+                </tr>
+                <tr>
+                    <td>contrato_1.pdf</td>
+                    <td>Manolo</td>
+                    <td class="status completed">FINALIZADO</td>
+                    <td>2023/09/17</td>
+                </tr>
+                <tr>
+                    <td>contrato_1.pdf</td>
+                    <td>Manolo</td>
+                    <td class="status canceled">CANCELADO</td>
+                    <td>2023/09/17</td>
+                </tr>
+                <tr>
+                    <td>contrato_1.pdf</td>
+                    <td>Manolo</td>
+                    <td class="status active">ACTIVO</td>
+                    <td>2023/09/17</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+    <script src="TusContratos.js"></script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Gebsy Housing, Inc. · Privacidad · Términos · Información de la compañía</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,220 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+    width: 100%;
+}
+
+.ul1 {
+  list-style-type: none;
+}
+
+.center-content {
+  display: flex;
+  align-items: center;
+}
+
+.ul2{
+  position: relative;
+  right: 70px;
+}
+.ul2 li{
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.ul1 span{
+  border-radius: 8px;
+  padding: 5px 10px;
+  background: #3ca2a2;
+  color: white;
+}
+
+.navegacion {
+  color: black; /* Hereda el color del elemento padre */
+  text-decoration: none; /* Elimina el subrayado */
+}
+.navegacion {
+  border-radius: 8px;
+  padding: 5px 10px;
+  background: #92c7a3;
+}
+.navegacion:visited {
+  color: inherit; /* Color del enlace visitado */
+}
+.navegacion:active {
+  color: inherit; /* Color del enlace activo */
+}
+.navegacion:link {
+  color: inherit; /* Color del enlace no visitado */
+}
+
+.cierraSesion{
+  border-radius: 8px;
+  padding: 5px 20px;
+  background: #215a6d;
+  color: white;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+    max-width: 1400px; 
+    margin: 0 auto;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.add-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Table */
+.contract-table {
+    width: 100%; /* La tabla ocupará todo el ancho del contenedor */
+    max-width: 1200px; /* Limitar el ancho máximo para mantener la estética */
+    margin: 0 auto; /* Centrar la tabla horizontalmente */
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contract-table thead {
+    background-color: #f5f5f5; /* Gris claro */
+    color: #333; /* Texto en negro */
+}
+
+.contract-table th,
+.contract-table td {
+    padding: 20px 30px; /* Incrementar padding para más espacio interno */
+    text-align: left;
+}
+
+.contract-table th {
+    width: 25%; /* Ancho uniforme para cada columna */
+}
+
+.contract-table tbody tr {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Efecto de sombra */
+    transition: transform 0.2s ease-in-out;
+}
+
+.contract-table tbody tr:hover {
+    transform: translateY(-3px); /* Animación de elevación al pasar el mouse */
+    background-color: #f1f1f1;
+}
+
+.status.pending {
+    color: orange;
+    font-weight: bold;
+}
+
+.status.expired {
+    color: red;
+    font-weight: bold;
+}
+
+.status.completed {
+    color: green;
+    font-weight: bold;
+}
+
+.status.canceled {
+    color: gray;
+    font-weight: bold;
+}
+
+.status.active {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%; /* Más ancho */
+    max-width: 1000px; /* Ajusta el ancho máximo según sea necesario */
+    max-height: 90%; /* Limita la altura máxima */
+    overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es demasiado alto */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    color: #888;
+    font-size: 14px;
+}

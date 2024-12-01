@@ -1,0 +1,297 @@
+body{
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+    width: 100%;
+}
+
+.ul1 {
+  list-style-type: none;
+}
+
+.center-content {
+  display: flex;
+  align-items: center;
+}
+
+.ul2{
+  position: relative;
+  right: 70px;
+}
+.ul2 li{
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.ul1 span{
+  border-radius: 8px;
+  padding: 5px 10px;
+  background: #3ca2a2;
+  color: white;
+}
+
+.navegacion {
+  color: black; /* Hereda el color del elemento padre */
+  text-decoration: none; /* Elimina el subrayado */
+}
+.navegacion {
+  border-radius: 8px;
+  padding: 5px 10px;
+  background: #92c7a3;
+}
+.navegacion:visited {
+  color: inherit; /* Color del enlace visitado */
+}
+.navegacion:active {
+  color: inherit; /* Color del enlace activo */
+}
+.navegacion:link {
+  color: inherit; /* Color del enlace no visitado */
+}
+
+.cierraSesion{
+  border-radius: 8px;
+  padding: 5px 20px;
+  background: #215a6d;
+  color: white;
+}
+.center-content img {
+  margin-right: 10px; /* Ajusta el espacio entre la imagen y el texto si es necesario */
+}
+.image-container {
+  width: 100%; /* Ajusta el tamaño deseado */
+  height: 600px; /* Ajusta el tamaño deseado */
+  overflow: hidden; /* Oculta cualquier contenido que se desborde */
+  background: black;
+  margin: 0;
+  padding: 0;
+  position: relative; /* Necesario para posicionar el texto absolutamente dentro del contenedor */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cubre todo el contenedor y recorta el exceso */
+  margin: 0;
+  padding: 0;
+  opacity: 0.6;
+}
+
+.centered-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el texto horizontal y verticalmente */
+  color: white; /* Ajusta el color del texto */
+  font-size: 24px; /* Ajusta el tamaño del texto */
+  text-align: center;
+}
+
+.letra-grande{
+  font-size: 86px;
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+}
+
+.letra-verde{
+  color: #92c7a3;
+  font-size: 38.4px;
+  margin-top: -70px; 
+}
+
+.botones{
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 10px 15px;
+  border: none;
+}
+.centered-text button:nth-of-type(2) {
+  /* Estilos específicos para el segundo botón */
+  background: #2c2f30; /* Ejemplo de estilo */
+  color: white;
+}
+
+.inmuebles-en-culiacan{
+  font-size: 50px;
+  position: relative;
+  left: 40px;
+  margin-bottom: 60px;
+  
+}
+
+.contendor-inmuebles-destacados {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+
+.contenedor-inmuebles-destacados-imagen {
+  overflow: hidden;  /* Oculta cualquier contenido que se desborde */
+  text-align: center;
+  width: 500px;
+  height: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-inmuebles-destacados-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+}
+
+.inmuebles-destacados{
+  font-size: 50px;
+  position: relative;
+  left: 40px;
+  margin-top: 120px;
+}
+
+.rentar-compra-container{
+  position: relative;
+  left: 150px;
+  background: #f0effb;
+  padding: 5px;
+  border: 2px solid #f0eaff;
+  border-radius: 8px;
+  width: 170px;
+}
+
+/* Inmuebles destacados  */
+.rentar-compra-container button{
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+.linea1, .linea2{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px ;
+}
+.inmueble{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding-bottom: 50px;
+  border-radius: 10px;
+  color: black;
+}
+.inmueble > img{
+  border-radius: 10px 10px 0px 0px;
+}
+.inmueble-contenedor{
+  padding-left: 20px;
+  margin-top: -10px;
+}
+.inmuebles-listados{
+  padding: 50px 270px;
+  margin-top: -40px;
+}
+.rentar-compra-container{
+  width: 300px;
+}
+.rentar-compra-container button{
+  font-size: 1.5em;
+  width: 48.5%;
+  height: 30px;
+}
+
+.rectangle-div {
+  width: 30%;
+  color: white;
+  padding-left: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  position: relative;
+  right: 10px;
+  bottom: 20px;
+  border-radius: 8px 8px 8px 0px;
+  background-color: #3ca2a2;
+  height: 16px;
+  font-weight: 600;
+}
+
+.span1{
+  color: #3ca2a2;
+  font-weight: bold;
+  font-size: 1.8em;
+}
+.span2{
+  color: gray;
+  font-size: 1.5em;
+}
+
+/* Anunvia tu inmueble */
+#anuncia-inmueble{
+  position: relative;
+  width: 100%; /* Ajusta el tamaño deseado */
+  height: 300px; /* Ajusta el tamaño deseado */
+  overflow: hidden; /* Oculta cualquier contenido que se desborde */
+  margin: 20px 0px;
+  margin-bottom: 50px;
+}
+
+.anuncia-inmueble-img{
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Cubre todo el contenedor y recorta el exceso */
+  transform: translateY(-30px); /* Ajusta el valor para mover la imagen hacia arriba */
+  
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el texto horizontal y verticalmente */
+  color: black; /* Ajusta el color del texto */
+  text-align: center;
+}
+.letra-grande-anuncia{
+  font-size: 3em;
+  font-weight: bold;
+}
+
+/* Encuentra inmuebles cerca de ti */
+#encuentra-inmueble{
+  position: relative;
+  width: 100%; /* Ajusta el tamaño deseado */
+  height: 300px; /* Ajusta el tamaño deseado */
+  overflow: hidden; /* Oculta cualquier contenido que se desborde */
+  margin: 20px 0px;
+  margin-bottom: 70px;
+}
+.letra-grande-asesoria-personalizada{
+  font-size: 2em;
+  font-weight: bold;
+}
+.overlay-text-asesoria-inmobiliaria{
+  position: absolute;
+  width: 100%; /* Ajusta el ancho según sea necesario */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el texto horizontal y verticalmente */
+  color: black; /* Ajusta el color del texto */
+  text-align: center;
+  font-size: 1.3em;
+}
+/* footer */
+.footer{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px;
+}

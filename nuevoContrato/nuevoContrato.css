@@ -1,0 +1,122 @@
+
+/* Contenedor principal */
+.nuevo-contrato {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 16px;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    color: #000;
+}
+
+/* Título principal */
+.titulo {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Campos del formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Campo genérico */
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.etiqueta {
+    font-size: 14px;
+    font-weight: 500;
+    color: #9a9a9a;
+}
+
+.valor,
+.opcion {
+    padding: 10px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #2c2c2c;
+}
+
+.opcion{
+    background: #D9D9D9; /* Color inicial */
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.opcion.selected {
+    background-color: gray; /* Color después de hacer clic */
+}
+
+/* Opciones de contrato */
+.opciones {
+    display: flex;
+    gap: 8px;
+}
+
+/* Teléfono con prefijo */
+.valor span {
+    margin-right: 8px;
+    font-weight: 500;
+}
+.valor input{
+    border: none;
+}
+
+/* Iconos */
+.icono-calendario {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+/* Botón de guardar */
+.boton-guardar {
+    margin-top: 20px;
+    align-self: flex-start;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background-color: #cff7d3;
+    border: 1px solid #009951;
+    color: #0c0c0d;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+
+.boton-guardar:hover {
+    background-color: #b4e5bb;
+}
+
+
+article {
+    flex: 1; /* Permite que los artículos crezcan para llenar el espacio disponible */
+    margin: 10px; /* Añade un margen alrededor de cada artículo */
+}
+#seccion {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre los artículos */
+    align-items: center; /* Alinea los artículos verticalmente al centro */
+}
+#segundo{
+    margin-top: 50px;
+    display: flex;
+    align-self: flex-start;
+}
+#segundo img{
+    align-items: flex-start;
+}

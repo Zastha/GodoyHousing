@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Contrato</title>
+    <link rel="stylesheet" href="nuevoContrato.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Inter:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="seccion">
+        <article>
+            <div class="nuevo-contrato">
+                <h1 class="titulo">Datos del Cliente</h1>
+        
+                <div class="formulario">
+                    <!-- Tipo de Contrato -->
+                    <div class="campo">
+                        <label class="etiqueta">Tipo de Contrato</label>
+                        <div class="opciones">
+                            <button class="opcion" id="btn1">Venta</button>
+                            <button class="opcion" id="btn2">Renta</button>
+                        </div>
+                    </div>
+        
+                    <!-- Nombre -->
+                    <div class="campo">
+                        <label class="etiqueta">Nombre</label>
+                        <input class="valor" placeholder="Jack Sullivan"></input>
+                    </div>
+        
+                    <!-- Email -->
+                    <div class="campo">
+                        <label class="etiqueta">Email</label>
+                        <input type="email" class="valor" placeholder="l22170803@culiacan.tecnm.mx"></input>
+                    </div>
+        
+                    <!-- Teléfono -->
+                    <div class="campo">
+                        <label class="etiqueta">Teléfono</label>
+                        <div class="valor">
+                            <span class="codigo"><input type="text" placeholder="+91"></span>
+                            
+                            <span class="numero"><input type="text" placeholder="9876543210"></span>
+                        </div>
+                    </div>
+        
+                    <!-- Fecha -->
+                    <div class="campo">
+                        <label class="etiqueta">Fecha</label>
+                        <div class="valor">
+                            <span><input type="date" name="" id="" placeholder="24-Feb-2022"></span>
+                        </div>
+                    </div>
+        
+                    <!-- Estado -->
+                    <div class="campo">
+                        <label class="etiqueta">Estado</label>
+                        <input class="valor" placeholder="Tamaulipas"></input>
+                    </div>
+        
+                    <!-- Código Postal -->
+                    <div class="campo">
+                        <label class="etiqueta">Pincode</label>
+                        <input class="valor" placeholder="403001"></input>
+                    </div>
+        
+                    <!-- Calle -->
+                    <div class="campo">
+                        <label class="etiqueta">Calle</label>
+                        <input class="valor" placeholder="Florida blanca"></input>
+                    </div>
+        
+                    <!-- Número Interior -->
+                    <div class="campo">
+                        <label class="etiqueta">Número Interior</label>
+                        <input class="valor" placeholder="403001"></input>
+                    </div>
+        
+                    <!-- Número Exterior -->
+                    <div class="campo">
+                        <label class="etiqueta">Número Exterior</label>
+                        <input class="valor" placeholder="403001"></input>
+                    </div>
+                </div>
+        
+                <button class="boton-guardar">Guardar</button>
+            </div>
+        </article>
+        <article id="segundo">
+            <img id="imagen" src="contrato/image 8.png" alt="">
+        </article>
+    </section>
+    
+    <script src="nuevoContrato.js"></script>
+</body>
+</html>

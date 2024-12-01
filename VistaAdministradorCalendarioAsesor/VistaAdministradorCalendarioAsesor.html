@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="VistaAdministradorCalendarioAsesor.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="vista-cliente nav">
+            <ul class="ul1">
+                <li class="center-content">
+                    <a href="../LandingPage/LandingPage.html"><img src="../generales/logo-GH 2 1.png" alt=""></a>
+                    <span>Cerca de mi</span>
+                </li>
+            </ul>
+            <ul class="ul2">
+                <a href="../LandingPage/LandingPage.html"><li class="navegacion">Inicio</li></a>
+                <a href="../ClientePrimerInmueble/paginaInmuebleAsesor.html"><li class="navegacion">Mis inmuebles</li></a>
+                <li class="navegacion">Contactanos</li>
+                <a href="../landingPageRegistro/landingpageRegistro.html"><li class="cierraSesion">Cerrar sesion</li></a>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <h2 id="asesor-nombre" class="asesorh2"></h2>
+    <section id="container">
+        <article>
+            <img id="asesor-foto" src="" alt="Foto del Asesor">
+        </article>
+        <article class="textos">
+            <p id="asesor-nombre" class="nombre"></p><br>
+            <p id="asesor-email"></p><br>
+            <p id="asesor-telefono"></p>
+        </article>
+    </section>
+
+    <div class="calendar-container">
+        <div id="calendar"></div>
+    
+        <div class="details-panel">
+            <h3>Citas del Día</h3>
+            <!-- Las citas del día seleccionado aparecerán aquí -->
+            <div id="today-appointments" style="padding: 20px; border-radius: 8px; background-color: #f9f9f9; border: 1px solid #ddd; margin-top: 20px;">
+            </div>
+    
+            <!-- Botón para añadir nueva cita -->
+            <button id="add-appointment-btn" style="display: block; margin-top: 20px;">Añadir cita</button>
+        </div>
+    </div>
+    
+    <!-- Modal para añadir una nueva cita -->
+  <div id="add-appointment-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close-modal-btn">&times;</span>
+        <h3>Añadir Cita</h3>
+        <form id="add-appointment-form">
+            <label for="appointment-name">Nombre Cliente:</label>
+            <input type="text" id="appointment-name" required><br><br>
+  
+            <label for="appointment-time">Hora:</label>
+            <input type="time" id="appointment-time" required><br><br>
+  
+            <label for="appointment-details">Dirección:</label>
+            <textarea id="appointment-details" required></textarea><br><br>
+  
+            <label for="appointment-phone">Número Cliente:</label>
+            <input type="text" id="appointment-phone" required><br><br>
+  
+            <label for="appointment-advisor">Nombre Asesor:</label>
+            <input type="text" id="appointment-advisor" required><br><br>
+  
+            <button type="submit">Guardar cita</button>
+        </form>
+    </div>
+  </div>
+    
+    <!-- Modal para detalles de la cita -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Detalles de las Citas</h3>
+            <div id="modal-details"></div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="godoy-housing-inc">©2024 Godoy Housing, Inc. · Privacidad · Terminos · Informacion de la compañia</div>
+        <img class="redes-sociales-1" alt="" src="../generales/Redes Sociales 1 (1).png">
+    </footer>
+    <script src="VistaAdministradorCalendarioAsesor.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    <script src="VistaAdministradorCalendarioAsesor.js"></script>
+    <script src="calendar.js"></script>
+    
+
+</body>
+</html>
