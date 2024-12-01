@@ -1,0 +1,240 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: #1e1e1e;
+  }
+  
+  /* Header */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-bottom: 1px solid #d9d9d9;
+  }
+  
+  .nav-left {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .center-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .center-content img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .center-content span {
+    border-radius: 8px;
+    padding: 5px 10px;
+    background: #3ca2a2;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .nav-right {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background: #92c7a3;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .logout-button {
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 8px;
+    background: #215a6d;
+    color: white;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Contenedor principal */
+  .admin-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Asegura que el contenido esté centrado verticalmente */
+    padding: 40px 20px; /* Espaciado general para darle más aire al contenedor */
+    max-width: 1200px; /* Limitar el ancho máximo */
+    margin: 0 auto; /* Centrar el contenedor en la página */
+  }
+  
+  /* Estilo para las secciones horizontales */
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  .scroll-container {
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 15px;
+  }
+  
+  .scroll-container::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .plans-container--card {
+    position: relative;
+    scroll-snap-align: center;
+    margin: 50px 15px 0;
+}
+
+  .scroll-container::-webkit-scrollbar-thumb {
+    background-color: #3ca2a2;
+    border-radius: 10px;
+  }
+
+  .scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  .card,
+.property-card {
+  background-color: #fff;
+  width: 180px; /* Ancho reducido de las tarjetas */
+  height: 300px; /* Altura incrementada para que las tarjetas sean más altas */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Aseguramos que el texto esté centrado */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+  margin: 0 10px; /* Espaciado entre las tarjetas */
+}
+
+.card img,
+.property-card img {
+  width: 100%;
+  height: 120px; /* Altura ajustada para las imágenes */
+  object-fit: cover; /* Para mantener la imagen dentro de las proporciones */
+  border-radius: 50%; /* Redondeamos la imagen para hacerla circular */
+  margin-bottom: 10px; /* Separación entre la imagen y el texto */
+}
+
+.card:hover,
+.property-card:hover {
+  transform: translateY(-5px); /* Efecto al pasar el mouse */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+
+  
+  
+.property-info {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .property-info h4 {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .property-info .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2ecc71; /* Color verde para el precio */
+    margin-bottom: 10px;
+  }
+  
+  .property-info p {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  .property-info .address {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .property-info .estancias {
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 10px;
+  }
+  
+  #assigned-properties .property-info {
+    font-size: 0.9rem;
+  }
+  
+  #assigned-properties .property-info p {
+    font-size: 0.8rem;
+    color: #333;
+  }
+
+
+
+
+
+
+  /* Footer */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    background-color: #f9f9f9;
+    border-top: 1px solid #d9d9d9;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+  }
+  
+  .footer a {
+    color: #3ca2a2;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+    width: 100px;
+    height: auto;
+  }
+  
