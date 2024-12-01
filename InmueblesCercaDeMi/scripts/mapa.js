@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Agregar marcador personalizado para la ubicación del usuario
         addCircularMarker(userCoordinates[0], userCoordinates[1], "Estás aquí", 'imagenes/user-location-icon.png');
         
-        // Ahora calcularemos la distancia a los inmuebles
+        // Ahora calculamos la distancia a los inmuebles y ordenamos la lista
         calculateDistancesToProperties(userCoordinates);
       },
       (error) => {
@@ -70,19 +70,30 @@ document.addEventListener("DOMContentLoaded", () => {
   // Función para calcular la distancia entre el usuario y los inmuebles
   function calculateDistancesToProperties(userCoordinates) {
     const propertyList = document.getElementById('property-list');
-    properties.forEach(property => {
+    
+    // Calculamos la distancia entre el usuario y cada propiedad
+    const propertiesWithDistance = properties.map(property => {
       const userLocation = L.latLng(userCoordinates[0], userCoordinates[1]);
       const propertyLocation = L.latLng(property.lat, property.lon);
       const distance = userLocation.distanceTo(propertyLocation); // Distancia en metros
       const distanceInKm = (distance / 1000).toFixed(2); // Convertir a km y redondear a 2 decimales
 
+      // Añadimos la distancia calculada a cada propiedad
+      return { ...property, distance: distanceInKm };
+    });
+
+    // Ordenamos las propiedades por distancia (de más cercano a más lejano)
+    const sortedProperties = propertiesWithDistance.sort((a, b) => a.distance - b.distance);
+
+    // Ahora agregamos las propiedades ordenadas al DOM
+    sortedProperties.forEach(property => {
       const listItem = document.createElement('li');
       listItem.innerHTML = `
         <img src="${property.image}" alt="${property.name}">
         <div class="property-info">
           <span class="title">${property.name}</span>
           <div class="price">${property.price}</div>
-          <div class="distance">Distancia: ${distanceInKm} km</div>
+          <div class="distance">Distancia: ${property.distance} km</div>
           <div class="address">${property.address}</div>
         </div>
       `;
