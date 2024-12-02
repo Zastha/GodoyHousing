@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tus Contratos</title>
     <link rel="stylesheet" href="TusContratos.css">
+    <link rel="stylesheet" href="hFRes.css">
 </head>
 <body>
     <!-- Header -->
@@ -31,20 +32,34 @@
         </nav>
     </header> -->
     <header>
-        <nav class="vista-cliente nav">
-            <ul class="ul1">
-                <li class="center-content">
+        <nav class="nav">
+            <div class="nav-left">
+                <div class="center-content">
                     <a href="../LandingPage/LandingPage.html"><img src="imagenes/logo-GH 2 1.png" alt=""></a>
-                    <a href="../InmueblesCercaDeMi/paginaCercaMi.html" class="btn">Cerca de mi</a>
-                </li>
+                    <a href="../InmueblesCercaDeMi/paginaCercaMiAsesor.html" class="btn">Cerca de mi</a>
+                </div>
+            </div>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-right">
+                <li><a href="../VistaVentanaCitaAgendaTERMINADO/index.html" class="nav-link">Inicio</a></li>
+                <li><a href="../TusContratos/TusContratos.HTML" class="nav-link">Contratos</a></li>
+                <li><a href="../VistaVentanaCitaAgendaTERMINADO/index.html" class="nav-link">Citas</a></li>
+                <li><a href="../VistaMisInmueblesAsesorTERMINADO/index.html" class="nav-link">Inmuebles</a></li>
+                <li><a href="../landingPageRegistro/landingpageRegistro.html" class="logout-button" id="LogOut">Cerrar sesión</a></li>
             </ul>
-            <ul class="ul2">
-                <a href="../LandingPage/LandingPage.html"><li class="navegacion">Inicio</li></a>
-                <a href="../TusContratos/TusContratos.HTML"><li class="navegacion">Contratos</li></a>
-                <a href=""><li class="navegacion">Citas</li></a>
-                <li class="navegacion">Inmuebles</li>
-                <a href="../landingPageRegistro/landingpageRegistro.html"><li class="cierraSesion">Cerrar sesion</li></a>
-            </ul>
+            <div class="mobile-menu">
+              <ul>
+                <li><a href="../LandingPage/LandingPage.html" class="nav-link">Inicio</a></li>
+                <li><a href="../VistaTusContratosAsesor/TusContratos.html" class="nav-link">Contratos</a></li>
+                <li><a href="../VistaVentanaCitaAgendaTERMINADO/index.html" class="nav-link">Citas</a></li>
+                <li><a href="../VistaMisInmueblesAsesorTERMINADO/index.html" class="nav-link">Inmuebles</a></li>
+                <li><a href="../landingPageRegistro/landingpageRegistro.html" class="logout-button" id="LogOut">Cerrar sesión</a></li>
+              </ul>
+            </div>
         </nav>
     </header>
 
@@ -104,6 +119,7 @@
         </div>
     </div>
     <script src="TusContratos.js"></script>
+    <script src="menuMovil.js"></script>
 
     <!-- Footer -->
     <footer class="footer">
