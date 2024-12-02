@@ -13,6 +13,23 @@ body{
     padding: 0;
     overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2ecc71; /* Color verde */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #27ae60; /* Color verde oscuro */
+}
+
 nav{
   display: flex;
   justify-content: space-between;

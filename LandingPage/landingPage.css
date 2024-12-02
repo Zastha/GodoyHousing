@@ -39,6 +39,22 @@ nav{
   color: white;
 }
 
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2ecc71; /* Color verde */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #27ae60; /* Color verde oscuro */
+}
+
 .navegacion {
   color: black; /* Hereda el color del elemento padre */
   text-decoration: none; /* Elimina el subrayado */

@@ -67,6 +67,22 @@ body {
   color: white;
 }
 
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2ecc71; /* Color verde */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #27ae60; /* Color verde oscuro */
+}
+
 .center-content img {
   margin-right: 10px; /* Ajusta el espacio entre la imagen y el texto si es necesario */
 }
