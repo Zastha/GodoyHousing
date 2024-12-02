@@ -1,0 +1,253 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+
+  /*resto de la pagina*/
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  a{
+    text-decoration: none;
+  }
+  /* Títulos */
+  h1 {
+    text-align: left;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin: 20px 0 10px;
+    color: #333;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  /* Layout principal */
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Filtros 1/4 y tarjetas 3/4 */
+    gap: 20px;
+    align-items: flex-start;
+    font-size: 20px;
+  }
+  
+  /* Filtros */
+  .filters {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Opciones de botones */
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .options button {
+    padding: 8px 12px;
+    font-size: 0.9em;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .options button:hover {
+    background-color: #ddd;
+  }
+  
+  .range {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .range label {
+    font-size: 0.9em;
+  }
+  
+  .range input {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+  
+  .checkbox-group input {
+    cursor: pointer;
+  }
+  
+  .slider input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #ddd;
+    height: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .slider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #215a6d;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .slider p {
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    margin-top: 5px;
+  }
+  /* Results Section */
+/* Contenedor de texto "4 Resultados" */
+.results-summary {
+    display: block; /* Asegura que ocupe toda la fila */
+    width: fit-content; /* Ajusta el ancho al contenido */
+    height: fit-content;
+    margin: 0 auto 20px; /* Centra el texto y agrega espaciado inferior */
+    background-color: #fff; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde gris */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 5px 20px; /* Espaciado interno */
+    font-weight: bold;
+    color: #555; /* Color del texto */
+    text-align: center; /* Centra el texto dentro del contenedor */
+  }
+  
+  /* Contenedor de Resultados */
+  .results {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas para las tarjetas */
+    gap: 20px; /* Espaciado entre tarjetas */
+  }
+ /* Contenedor de Tarjetas */
+.results-cards {
+    display: grid; /* Usar diseño de cuadrícula */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+    gap: 20px; /* Espaciado entre tarjetas */
+    margin-top: 0; /* Asegura que no haya margen adicional superior */
+  }
+  
+  /* Property Cards */
+  .property-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+  }
+  
+  .property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .property-card img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .property-card .property-info {
+    padding: 15px;
+  }
+  
+  .property-card .property-info h2 {
+    font-size: 18px;
+    color: #007BFF;
+    margin: 0 0 10px 0;
+  }
+  
+  .property-card .property-info p {
+    margin: 0 0 5px 0;
+    color: #555;
+  }
+  
+  .property-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .property-card ul li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+  }
+  
+  .property-card ul li i {
+    color: #007BFF;
+  }
+  
+  /* Add Card */
+  .add-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 2px dashed #ddd;
+    height: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .add-card:hover {
+    background-color: #e1e1e1;
+    border-color: #bbb;
+  }
+  #boton{
+    width: auto;
+    height: 100px;
+  }
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .main-content {
+      flex-direction: column;
+    }
+    
+    .filters,
+    .results {
+      width: 100%;
+    }
+  }
+/*Fin resto de la pagina*/
+
+
+  /*Footer*/
+  .footer{
+    display: flex;
+    justify-content: space-around;
+  }
