@@ -5,31 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tus Bienes Inmuebles</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="hFRes.css"/>
+
   <!-- Enlace a la biblioteca de Font Awesome -->
   <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet"></head>
 <body>
-    <header>
-        <nav class="nav">
-            <div class="nav-left">
-                <div class="center-content">
-                    <img src="logo-GH 2 1.png" alt="Logo" id="Logo">
-                    <a href="../InmueblesCercaDeMi/paginaCercaMi.html" class="btn">Cerca de mi</a>
-                </div>
+   <!-- Header -->
+   <header>
+    <nav class="nav">
+        <div class="nav-left">
+            <div class="center-content">
+              <a href="../LandingPage/LandingPage.html"><img src="imagenes/logo-GH 2 1.png" alt=""></a>
+              <a href="../InmueblesCercaDeMi/paginaCercaMiAsesor.html" class="btn">Cerca de mi</a>
             </div>
-            <div class="hamburger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-right">
-              <li><a href="#" class="nav-link">Inicio</a></li>
-              <li><a href="#" class="nav-link">Contratos</a></li>
-              <li><a href="#" class="nav-link">Citas</a></li>
-              <li><a href="#" class="nav-link">Inmuebles</a></li>
-              <li><a href="#" class="logout-button" id="LogOut">Cerrar sesión</a></li>
+        </div>
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-right">
+            <li><a href="../LandingPage/LandingPage.html" class="nav-link">Inicio</a></li>
+            <li><a href="../VistaTusContratosAsesor/TusContratos.html" class="nav-link">Contratos</a></li>
+            <li><a href="../VistaVentanaCitaAgendaTERMINADO/index.html" class="nav-link">Citas</a></li>
+            <li><a href="../VistaMisInmueblesAsesorTERMINADO/index.html" class="nav-link">Inmuebles</a></li>
+            <li><a href="../landingPageRegistro/landingpageRegistro.html" class="logout-button" id="LogOut">Cerrar sesión</a></li>
+        </ul>
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="../LandingPage/LandingPage.html" class="nav-link">Inicio</a></li>
+            <li><a href="../VistaTusContratosAsesor/TusContratos.html" class="nav-link">Contratos</a></li>
+            <li><a href="../VistaVentanaCitaAgendaTERMINADO/index.html" class="nav-link">Citas</a></li>
+            <li><a href="../VistaMisInmueblesAsesorTERMINADO/index.html" class="nav-link">Inmuebles</a></li>
+            <li><a href="../landingPageRegistro/landingpageRegistro.html" class="logout-button" id="LogOut">Cerrar sesión</a></li>
           </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
 <section class="main">
 
@@ -39,7 +51,7 @@
           <!-- Card 1 -->
           <a href="../paginaInmuebleAsesor/paginaInmuebleAsesor.html">
             <div class="property-card">
-            <img src="dillon-kydd-XGvwt544g8k-unsplash 1.png" alt="Álvaro Obregón"> 
+            <img src="imagenes/dillon-kydd-XGvwt544g8k-unsplash 1.png" alt="Álvaro Obregón"> 
             <div class="property-info">
               <h2>$9,000,000</h2>
               <p>Álvaro Obregón</p>
@@ -54,7 +66,7 @@
         </a>
           <!-- Card 2 -->
           <div class="property-card">
-            <img src="pexels-binyamin-mellish-106399 1.png" alt="Evergreen Terrace"> 
+            <img src="imagenes/pexels-binyamin-mellish-106399 1.png" alt="Evergreen Terrace"> 
             <div class="property-info">
               <h2>$2,700/month</h2>
               <p>Evergreen Terrace</p>
@@ -68,7 +80,7 @@
           </div>
           <!-- Card 3 -->
           <div class="property-card">
-            <img src="r-architecture-0tKCSyLXqQM-unsplash 1.png" alt="Tarpon Bay"> 
+            <img src="imagenes/r-architecture-0tKCSyLXqQM-unsplash 1.png" alt="Tarpon Bay"> 
             <div class="property-info">
               <h2>$1,600/month</h2>
               <p>Tarpon Bay</p>
@@ -105,10 +117,12 @@
 </section>
 
 
-    <footer class="footer">
-        <div class="godoy-housing-inc">©2024 Godoy Housing, Inc. · Privacidad · Terminos · Informacion de la compañia</div>
-        <img class="redes-sociales-1" alt="" src="Redes Sociales 1.png">
-    </footer>
+    <!-- Footer -->
+<footer class="footer">
+  <p>©2024 Godoy Housing, Inc. · <a href="#">Privacidad</a> · <a href="#">Términos</a> · <a href="#">Información de la compañía</a></p>
+</footer>
+<!-- Vincular al archivo JavaScript -->
+<script src="menuMovil.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
 
