@@ -28,6 +28,8 @@ article {
 
 input[type="date"],
 input[type="time"],
+input[type="text"],
+input[type="tel"],
 button {
     display: block;
     margin: 10px auto;
