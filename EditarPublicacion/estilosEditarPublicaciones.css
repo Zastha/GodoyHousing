@@ -8,6 +8,81 @@ body {
 }
 
 
+/* Header */
+
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.center-content img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.center-content span {
+  border-radius: 8px;
+  padding: 5px 10px;
+  background: #3ca2a2;
+  color: white;
+  font-weight: 600;
+}
+
+.nav-right {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav-link,
+.logout-button {
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+}
+
+.nav-link {
+  background-color: #92c7a3;
+}
+
+.logout-button {
+  background-color: #215a6d;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.create-publication-button {
+  padding: 10px 20px;
+  background-color: #2ecc71; /* Color verde */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-publication-button:hover {
+  background-color: #27ae60; /* Color verde oscuro */
+}
 
 /* Main Content */
 .main-content {
@@ -237,19 +312,7 @@ h1 {
   outline: none;
 }
 
-/* Popup Overlay */
-.popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
+
 
 /* Contenido del Popup */
 .popup-content {
@@ -695,6 +758,8 @@ form input {
   line-height: 1.6;
 }
 
+
+
 /* Popup de Contacto */
 .popup-overlay.contact-popup {
   position: fixed;
@@ -798,6 +863,22 @@ form input {
 .contact-popup-content .cancel-btn:hover {
   background-color: #ddd;
   transform: scale(1.02);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2ecc71; /* Color verde */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #27ae60; /* Color verde oscuro */
 }
 
 .edit-contact-button {
@@ -933,8 +1014,3 @@ form input {
 
 
 
-/* Footer */
-.footer{
-  display: flex;
-  justify-content: space-around;
-}

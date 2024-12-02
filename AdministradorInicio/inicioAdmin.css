@@ -43,6 +43,11 @@ body {
     scroll-snap-type: x proximity;
     gap: 15px;
   }
+
+  a{
+    text-decoration: none;
+    color: #333;
+  }
   
   .scroll-container::-webkit-scrollbar {
     height: 14px;

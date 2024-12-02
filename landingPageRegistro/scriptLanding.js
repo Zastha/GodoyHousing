@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (user) {
                 if (user.email === "cliente@gh.com") {
-                    window.location.href = "../LandingPage/landingpage.html";
+                    window.location.href = "../LandingPage/LandingpageCliente.html";
                 } else if (user.email === "admin@gh.com") {
                     window.location.href = "../AdministradorInicio/InicioAdmin.html";
                 } else if (user.email === "asesor@gh.com") {

@@ -43,7 +43,7 @@ const agregarTarjetaExtra = () => {
     tarjetaExtra.classList.add("tarjeta");
 
     const fotoExtra = document.createElement("img");
-    fotoExtra.setAttribute("src", "/paginas/NuevaPublicacion/add-icon.png"); // Cambia la ruta a la imagen que deseas mostrar
+    fotoExtra.setAttribute("src", "add-icon.png"); // Cambia la ruta a la imagen que deseas mostrar
     fotoExtra.setAttribute("id", "foto, foto-extra");
 
     tarjetaExtra.appendChild(fotoExtra);

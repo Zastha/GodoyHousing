@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Función para agregar un marcador con ícono circular
-  function addCircularMarker(lat, lon, displayName, iconUrl) {
+  function addCircularMarker(lat, lon, displayName, iconUrl, propertyPageUrl) {
     const icon = L.divIcon({
       className: 'circle-icon', // Clases para el estilo
       html: `<img src="${iconUrl}" alt="${displayName}" class="circular-image">`, // Imagen circular
@@ -33,6 +33,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const marker = L.marker([lat, lon], { icon: icon }).addTo(map);
     marker.bindPopup(displayName).openPopup();
+    
+    // Evento de clic para redirigir a la página del inmueble
+    marker.on('click', () => {
+      window.location.href = propertyPageUrl; // Redirigir al archivo del inmueble
+    });
+
     markers.push(marker); // Almacena el marcador en el array
   }
 
@@ -46,8 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
         map.setView(userCoordinates, 13); // Centra el mapa en la ubicación del usuario con zoom 13
 
         // Agregar marcador personalizado para la ubicación del usuario
-        addCircularMarker(userCoordinates[0], userCoordinates[1], "Estás aquí", 'imagenes/user-location-icon.png');
-        
+        addCircularMarker(userCoordinates[0], userCoordinates[1], "Estás aquí", 'imagenes/user-location-icon.png', '#');
+
         // Ahora calculamos la distancia a los inmuebles y ordenamos la lista
         calculateDistancesToProperties(userCoordinates);
       },
@@ -62,9 +68,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Lista de inmuebles con coordenadas
   const properties = [
-    { lat: 24.78268780386428, lon: -107.39484548744825, name: 'Apartamento de Lujo', image: 'imagenes/casaPrivada.png', price: '$250,000', address: 'Calle Ficticia 123, Ciudad Ficticia' },
-    { lat: 24.792194416518125, lon: -107.39428758784773, name: 'Casa en Venta en Privada', image: 'imagenes/casapriv.png', price: '$180,000', address: 'Avenida Privada 321, Ciudad Privada' },
-    { lat: 24.78894608113617, lon: -107.39238321962752, name: 'Casa Amueblada para Renta', image: 'imagenes/cabana.png', price: '$1,200/mes', address: 'Plaza Principal 99, Ciudad Renta' }
+    { lat: 24.78268780386428, lon: -107.39484548744825, name: 'Apartamento de Lujo', image: 'imagenes/casaPrivada.png', price: '$250,000', address: 'Calle Ficticia 123, Ciudad Ficticia', propertyPageUrl: '../paginaInmuebleAsesor/paginaInmuebleAdministrador.html' },
+    { lat: 24.792194416518125, lon: -107.39428758784773, name: 'Casa en Venta en Privada', image: 'imagenes/casapriv.png', price: '$180,000', address: 'Avenida Privada 321, Ciudad Privada', propertyPageUrl: '../paginaInmuebleAsesor/paginaInmuebleAdministrador.html' },
+    { lat: 24.78894608113617, lon: -107.39238321962752, name: 'Casa Amueblada para Renta', image: 'imagenes/cabana.png', price: '$1,200/mes', address: 'Plaza Principal 99, Ciudad Renta', propertyPageUrl: '../paginaInmuebleAsesor/paginaInmuebleAdministrador.html' }
   ];
 
   // Función para calcular la distancia entre el usuario y los inmuebles
@@ -99,12 +105,12 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
       
       // Añadir el marcador para el inmueble
-      addCircularMarker(property.lat, property.lon, property.name, property.image);
+      addCircularMarker(property.lat, property.lon, property.name, property.image, property.propertyPageUrl);
 
       // Añadir evento de clic para centrar el mapa y mostrar el marcador correspondiente
       listItem.addEventListener('click', () => {
         map.setView([property.lat, property.lon], 17); // Centra y hace zoom
-        addCircularMarker(property.lat, property.lon, property.name, property.image); // Agrega marcador
+        addCircularMarker(property.lat, property.lon, property.name, property.image, property.propertyPageUrl); // Agrega marcador
       });
 
       propertyList.appendChild(listItem);
@@ -133,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const newLatLng = [parseFloat(lat), parseFloat(lon)];
 
             map.setView(newLatLng, 13); // Centra el mapa en la nueva ubicación con zoom 13
-            addCircularMarker(lat, lon, display_name, 'imagenes/newLoc.png'); // Marcador con newLoc.png
+            addCircularMarker(lat, lon, display_name, 'imagenes/newLoc.png', '#'); // Marcador con newLoc.png
           } else {
             alert('No se encontraron resultados para esa ubicación.');
           }

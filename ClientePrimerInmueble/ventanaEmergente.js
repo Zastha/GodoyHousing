@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const uploadButton = document.getElementById("uploadButton");
     const fileInput = document.getElementById("fileInput");
 
+    // Flag para verificar si ya se ha seleccionado un archivo
+    let fileSelected = false;
+
     // Mostrar la ventana emergente al hacer clic en el botón "Añadir Inmueble"
     addPropertyBtn?.addEventListener("click", () => {
         popup.style.display = "flex";
@@ -27,15 +30,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Activar el input de archivo al hacer clic en el botón "Subir Imagen"
     uploadButton?.addEventListener("click", () => {
-        fileInput.click();
+        if (!fileSelected) { // Solo abrir si no se ha seleccionado un archivo
+            fileInput.click();
+        }
     });
 
     // Manejar el archivo seleccionado
     fileInput?.addEventListener("change", () => {
-        if (fileInput.files.length > 0) {
+        if (fileInput.files.length > 0 && !fileSelected) {
             const fileName = fileInput.files[0].name;
             alert(`Archivo seleccionado: ${fileName}`);
-            // Lógica adicional, como mostrar una vista previa o enviar el archivo al servidor
+            fileSelected = true; // Marcamos que un archivo ya ha sido seleccionado
+
+            // Redirigir a la página de edición después de seleccionar la imagen
+            window.location.href = '../EditarPublicacion/paginaEdicionEncapsulada.html';
         }
     });
 

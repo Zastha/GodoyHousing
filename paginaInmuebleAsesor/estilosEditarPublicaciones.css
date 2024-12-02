@@ -26,6 +26,8 @@ h1 {
   color: #333;
 }
 
+
+
 .photo-grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr; /* La primera columna más grande */
@@ -489,42 +491,180 @@ button:hover {
 
 
 
+/* Contenedor principal */
+.container {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Estilos de la lista de inmuebles (a la izquierda) */
+.property-list {
+  flex: 1;
+  min-width: 450px; /* Para que ocupe una buena parte de la pantalla */
+  padding-right: 40px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+}
+
+#property-list {
+  list-style: none;
+  padding: 0;
+}
+
+#property-list li {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 120px 1fr; /* Imagen a la izquierda, contenido a la derecha */
+  grid-template-rows: auto;
+  grid-gap: 15px;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#property-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+#property-list img {
+  width: 100%;
+  height: 120px; /* Altura fija para la imagen */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.property-list span {
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.property-list li:hover {
+  background-color: #f1f1f1;
+  transform: translateY(-5px);
+}
+
+.property-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.property-info span.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.property-info .price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2ecc71; /* Color verde para el precio */
+  margin-bottom: 10px;
+}
+
+.property-info .distance {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.property-info .address {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: auto;
+}
+
+/* Estilos para el mapa (a la derecha) */
 .map-section {
-  margin-top: 24px;
+  width: 60%; /* El mapa ahora ocupa el 60% del espacio */
+  min-width: 450px;
+}
+
+.property-list h2 {
+  text-align: center; /* Centra el texto dentro del contenedor */
+  font-size: 1.5rem; /* Ajusta el tamaño del texto, si es necesario */
+  margin-bottom: 20px; /* Espaciado inferior, ajusta según lo necesites */
+}
+
+
+.map-section h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #333;
 }
 
 .map-container {
-  margin-top: 16px;
   position: relative;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 #location-input {
-  width: 60%;
-  padding: 8px;
-  margin-right: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+#location-input:focus {
+  border-color: #e74c3c;
 }
 
 #search-location {
-  padding: 8px 16px;
-  background-color: #92c7a3;
+  width: 100%;
+  padding: 12px;
+  background-color: #e74c3c;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 30px;
+  font-size: 16px;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 #search-location:hover {
-  background-color: #81b797;
+  background-color: #c0392b;
 }
 
-#map {
-  height: 400px;
+/* Estilo para los íconos circulares */
+.circle-icon {
+  border-radius: 50%; /* Redondear el ícono */
+  overflow: hidden; /* Asegurarnos de que las imágenes no sobresalgan del círculo */
+  width: 40px; /* Ancho del ícono circular */
+  height: 40px; /* Alto del ícono circular */
+  border: 2px solid white; /* Opcional: Añadir borde blanco */
+}
+
+.circular-image {
   width: 100%;
-  margin-top: 16px;
-  border: 1px solid #d9d9d9;
-  border-radius: 8px;
+  height: 100%;
+  object-fit: cover; /* Asegurarse de que la imagen se ajuste bien al círculo */
+  border-radius: 50%; /* Redondear la imagen dentro del ícono */
+}
+
+
+/* Estilo para el mapa */
+#map {
+  width: 100%;
+  height: 600px; /* Aumentamos la altura del mapa */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .features-list {

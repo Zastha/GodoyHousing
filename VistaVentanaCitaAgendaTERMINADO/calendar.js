@@ -1,8 +1,8 @@
 // Lista de citas (puedes agregar más citas según sea necesario)
 const citas = [
-    { id: 1, nombre: "Cita 1", hora: "10:00 AM", detalle: "Espindola Leyva, 909 Huizaches Cln. Sin.", imagen: "dillon-kydd-XGvwt544g8k-unsplash 1.png", fecha: "2024-11-30" },
-    { id: 2, nombre: "Cita 2", hora: "12:00 PM", detalle: "Cristian Leyva, 909 Lomas Cln. Sin.", imagen: "pexels-binyamin-mellish-106399 1.png", fecha: "2024-11-30" },
-    { id: 3, nombre: "Cita 3", hora: "03:00 PM", detalle: "Hector Machaca, 909 VillaBonita Cln. Sin.", imagen: "r-architecture-0tKCSyLXqQM-unsplash 1.png", fecha: "2024-11-30" }
+    { id: 1, nombre: "Cita Agendada", hora: "10:00 AM", detalle: "Espindola Leyva, 909 Huizaches Cln. Sin.", imagen: "dillon-kydd-XGvwt544g8k-unsplash 1.png", fecha: "2024-12-03" },
+    { id: 2, nombre: "Cita Agendada", hora: "12:00 PM", detalle: "Cristian Leyva, 909 Lomas Cln. Sin.", imagen: "pexels-binyamin-mellish-106399 1.png", fecha: "2024-12-02" },
+    { id: 3, nombre: "Cita Agendada", hora: "03:00 PM", detalle: "Hector Machaca, 909 VillaBonita Cln. Sin.", imagen: "r-architecture-0tKCSyLXqQM-unsplash 1.png", fecha: "2024-12-02" }
 ];
 
 // Obtener la fecha actual en formato 'YYYY-MM-DD'
