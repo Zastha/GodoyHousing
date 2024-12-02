@@ -26,7 +26,7 @@ document.querySelector('.create-publication-button').addEventListener('click', (
       alert("Publicación creada exitosamente!"); // Muestra una alerta (esto puede ser reemplazado por tu lógica de creación)
   
       // Redirigir al usuario a la página de "Cerca de Mi" si la validación es exitosa
-      window.location.href = '../InmueblesCercaDeMi/paginaCercaMi.html';
+      window.location.href = '../ClientePrimerInmueble2/PaginaInmuebleAsesor.html';
     }
   });
   

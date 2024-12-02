@@ -26,37 +26,36 @@
             <a href="../landingPageRegistro/landingpageRegistro.html"><li class="cierraSesion">Cerrar sesion</li></a>
         </ul>
     </nav>
-</header>
-
+  </header>
 
   <!-- Contenido Principal -->
   <main class="main-content">
     <h1>Tus Inmuebles:</h1>
+    <!-- Tarjeta de propiedad -->
     <div class="property-card">
-      <div class="add-property" id="addPropertyBtn">
-        
-        <img src="imagenes/add-icon.png" alt="Añadir Inmueble" class="add-icon">
+      <img src="Imagenes/pexels-binyamin-mellish-106399 1.png" alt="Casa en las Montañas" class="property-image">
+      <div class="property-info">
+          <h2 class="property-title">Casa en las Montañas</h2>
+          <p class="property-location"><strong>Ubicación:</strong> Calle Montaña 400, Valle de Bravo</p>
+          <p class="property-price"><strong>Precio:</strong> $250,000</p>
+          <p class="property-status"><strong>Estado:</strong> Disponible</p>
       </div>
     </div>
-  </main>
+    <!-- Añadir más inmuebles aquí -->
+<div class="property-card"> <a href="../EditarPublicacion/paginaEdicionEncapsulada.html"><div class="add-property" id="addPropertyBtn">
+    <img src="Imagenes/add-icon.png" alt="Añadir Inmueble" class="add-icon">
+    <p class="add-property-text">Añadir Inmueble</p> <!-- Nuevo texto añadido -->
+  </div></a>
+  
+</div>
 
-  <!-- Ventana Emergente -->
-  <div id="popup" class="popup-overlay">
-    <div class="popup-content">
-      <h2>¡Ya Casi!</h2>
-      <p>¡Estás cerca de publicar tu inmueble en el mejor catálogo de inmuebles del país! Solo necesitamos una foto de una Identificación Oficial.</p>
-      <div class="upload-box">
-        <input type="file" id="fileInput" accept="image/*" hidden>
-        <button class="upload-button" id="uploadButton">Subir Imagen</button>
-      </div>
-      <button class="close-popup" id="closePopupBtn">Cerrar</button>
-    </div>
-  </div>
+
+ 
 
   <!-- Footer -->
   <footer class="footer">
     <p>©2024 Godoy Housing, Inc. · <a href="#">Privacidad</a> · <a href="#">Términos</a> · <a href="#">Información de la compañía</a></p>
-  
+    <img src="Imagenes/Redes Sociales 1.png" alt="Redes Sociales" class="social-icons">
   </footer>
 
   <!-- Vincular al archivo JavaScript -->
