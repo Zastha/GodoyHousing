@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Godoy Housing - Tus Inmuebles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Vincular al archivo CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Fuente Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="vista-cliente nav">
+        <ul class="ul1">
+            <li class="center-content">
+                <a href="../LandingPage/LandingPage.html"><img src="imagenes/logo-GH 2 1.png" alt=""></a>
+                <a href="../InmueblesCercaDeMi/paginaCercaMi.html" class="btn">Cerca de mi</a>
+            </li>
+        </ul>
+        <ul class="ul2">
+            <a href="../LandingPage/LandingPage.html"><li class="navegacion">Inicio</li></a>
+            <a href="../ClientePrimerInmueble/paginaInmuebleAsesor.html"><li class="navegacion">Mis inmuebles</li></a>
+            <li class="navegacion">Contactanos</li>
+            <a href="../landingPageRegistro/landingpageRegistro.html"><li class="cierraSesion">Cerrar sesion</li></a>
+        </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="main-content">
+    <h1>Tus Inmuebles:</h1>
+    <!-- Tarjeta de propiedad -->
+    <div class="property-card">
+      <img src="Imagenes/pexels-binyamin-mellish-106399 1.png" alt="Casa en las Montañas" class="property-image">
+      <div class="property-info">
+          <h2 class="property-title">Casa en las Montañas</h2>
+          <p class="property-location"><strong>Ubicación:</strong> Calle Montaña 400, Valle de Bravo</p>
+          <p class="property-price"><strong>Precio:</strong> $250,000</p>
+          <p class="property-status"><strong>Estado:</strong> Disponible</p>
+      </div>
+    </div>
+    <!-- Añadir más inmuebles aquí -->
+<div class="property-card"> <a href=""><div class="add-property" id="addPropertyBtn">
+    <img src="Imagenes/add-icon.png" alt="Añadir Inmueble" class="add-icon">
+    <p class="add-property-text">Añadir Inmueble</p> <!-- Nuevo texto añadido -->
+  </div></a>
+  
+</div>
+
+
+  <!-- Ventana Emergente -->
+  <div id="popup" class="popup-overlay">
+    <div class="popup-content">
+      <h2>¡Ya Casi!</h2>
+      <p>¡Estás cerca de publicar tu inmueble en el mejor catálogo de inmuebles del país! Solo necesitamos una foto de una Identificación Oficial.</p>
+      <div class="upload-box">
+        <input type="file" id="fileInput" accept="image/*" hidden>
+        <button class="upload-button" id="uploadButton">Subir Imagen</button>
+      </div>
+      <button class="close-popup" id="closePopupBtn">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>©2024 Godoy Housing, Inc. · <a href="#">Privacidad</a> · <a href="#">Términos</a> · <a href="#">Información de la compañía</a></p>
+    <img src="Imagenes/Redes Sociales 1.png" alt="Redes Sociales" class="social-icons">
+  </footer>
+
+  <!-- Vincular al archivo JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
