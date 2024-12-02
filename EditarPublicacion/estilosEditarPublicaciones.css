@@ -11,21 +11,7 @@ body {
 /* Header */
 
 
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #2ecc71; /* Color verde */
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-  text-align: center;
-}
 
-.btn:hover {
-  background-color: #27ae60; /* Color verde oscuro */
-}
 .nav {
   display: flex;
   justify-content: space-between;
@@ -82,6 +68,8 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
+
 
 .create-publication-button {
   padding: 10px 20px;
@@ -324,19 +312,7 @@ h1 {
   outline: none;
 }
 
-/* Popup Overlay */
-.popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
+
 
 /* Contenido del Popup */
 .popup-content {
@@ -782,6 +758,8 @@ form input {
   line-height: 1.6;
 }
 
+
+
 /* Popup de Contacto */
 .popup-overlay.contact-popup {
   position: fixed;
@@ -885,6 +863,22 @@ form input {
 .contact-popup-content .cancel-btn:hover {
   background-color: #ddd;
   transform: scale(1.02);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2ecc71; /* Color verde */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #27ae60; /* Color verde oscuro */
 }
 
 .edit-contact-button {
