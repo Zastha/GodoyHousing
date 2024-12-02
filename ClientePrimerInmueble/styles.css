@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -8,84 +8,65 @@ body {
     color: #1e1e1e;
   }
   
-  nav{
+  /* Header */
+  .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    position: relative;
-    width: 100%;
-}
-
-.ul1 {
-  list-style-type: none;
-}
-
-.center-content {
-  display: flex;
-  align-items: center;
-}
-
-.ul2{
-  position: relative;
-  right: 70px;
-}
-.ul2 li{
-  display: inline-block;
-  margin-right: 0.5rem;
-}
-.ul1 span{
-  border-radius: 8px;
-  padding: 5px 10px;
-  background: #3ca2a2;
-  color: white;
-}
-
-.navegacion {
-  color: black; /* Hereda el color del elemento padre */
-  text-decoration: none; /* Elimina el subrayado */
-}
-.navegacion {
-  border-radius: 8px;
-  padding: 5px 10px;
-  background: #92c7a3;
-}
-.navegacion:visited {
-  color: inherit; /* Color del enlace visitado */
-}
-.navegacion:active {
-  color: inherit; /* Color del enlace activo */
-}
-.navegacion:link {
-  color: inherit; /* Color del enlace no visitado */
-}
-
-.cierraSesion{
-  border-radius: 8px;
-  padding: 5px 20px;
-  background: #215a6d;
-  color: white;
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #2ecc71; /* Color verde */
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-  text-align: center;
-}
-
-.btn:hover {
-  background-color: #27ae60; /* Color verde oscuro */
-}
-
-.center-content img {
-  margin-right: 10px; /* Ajusta el espacio entre la imagen y el texto si es necesario */
-}
+    background-color: #fff;
+    border-bottom: 1px solid #d9d9d9;
+  }
+  
+  .nav-left {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .center-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .center-content img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .center-content span {
+    border-radius: 8px;
+    padding: 5px 10px;
+    background: #3ca2a2;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .nav-right {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background: #92c7a3;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .logout-button {
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 8px;
+    background: #215a6d;
+    color: white;
+    font-weight: 600;
+  }
   
   /* Main Content */
   .main-content {
