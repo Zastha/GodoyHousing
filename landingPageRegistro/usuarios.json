@@ -1,0 +1,14 @@
+[
+    {
+        "email": "cliente@gh.com",
+        "password": "1234"
+    },
+    {
+        "email": "admin@gh.com",
+        "password": "1234"
+    },
+    {
+        "email": "asesor@gh.com",
+        "password": "1234"
+    }
+]
