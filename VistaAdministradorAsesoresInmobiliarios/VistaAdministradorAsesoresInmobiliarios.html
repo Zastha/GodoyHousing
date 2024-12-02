@@ -4,28 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="VistaAdministradorAsesoresInmobiliarios.css">
+    <link rel="stylesheet" href="hFRes.css">
+
     <title>Document</title>
 </head>
 <body>
 
 <body>
-    <header>
-        <nav class="vista-cliente nav">
-            <ul class="ul1">
-                <li class="center-content">
-                    <a href="../LandingPage/LandingPage.html"><img src="../generales/logo-GH 2 1.png" alt=""></a>
-                    <a href="../InmueblesCercaDeMi/paginaCercaMi.html" class="btn">Cerca de mi</a>
-                </li>
-            </ul>
-            <ul class="ul2">
-                <a href="../LandingPage/LandingPage.html"><li class="navegacion">Inicio</li></a>
-                <a href="../VistaAdministradorContratos/VistaAdministradorContratos.html"><li class="navegacion">Contratos</li></a>
-                <li class="navegacion">Contactanos</li>
-                <a href="../landingPageRegistro/landingpageRegistro.html"><li class="cierraSesion">Cerrar sesion</li></a>
-            </ul>
-        </nav>
-        <hr>
-    </header>
+ <!-- Header -->
+ <header>
+    <nav class="nav">
+        <div class="nav-left">
+            <div class="center-content">
+                <a href="../LandingPage/LandingPage.html"><img src="imagenes/logo-GH 2 1.png" alt=""></a>
+                <a href="../InmueblesCercaDeMi/paginaCercaMiAdministrador.html" class="btn">Cerca de mi</a>
+            </div>
+        </div>
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-right">
+          <li><a href="../LandingPage/LandingPage.html" class="nav-link">Inicio</a></li>
+          <li><a href="../VistaAdministradorContratos/VistaAdministradorContratos.html" class="nav-link">Contratos</a></li>
+          <li><a href="../VistaAdministradorAsesoresInmobiliarios/VistaAdministradorAsesoresInmobiliarios.html" class="nav-link">Asesores</a></li>
+          <li><a href="../VistaMisInmueblesAdministradorTERMINADO/index.html" class="nav-link">Inmuebles</a></li>
+          <li><a href="../landingPageRegistro/landingpageRegistro.html" class="logout-button" id="LogOut">Cerrar sesión</a></li>
+        </ul>
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="../LandingPage/LandingPage.html" class="nav-link">Inicio</a></li>
+                <li><a href="../VistaAdministradorContratos/VistaAdministradorContratos.html" class="nav-link">Contratos</a></li>
+                <li><a href="../VistaAdministradorAsesoresInmobiliarios/VistaAdministradorAsesoresInmobiliarios.html" class="nav-link">Asesores</a></li>
+                <li><a href="../VistaMisInmueblesAdministradorTERMINADO/index.html" class="nav-link">Inmuebles</a></li>
+                <li><a href="../landingPageRegistro/landingpageRegistro.html" class="logout-button" id="LogOut">Cerrar sesión</a></li>
+          </ul>
+        </div>
+    </nav>
+</header>
+    
     <!-- <header id="buscador">
         <button>Buscar personas</button>
     </header> -->
@@ -67,9 +85,11 @@
 
     </ul>
     <script src="VistaAdministradorAsesoresInmobiliarios.js"></script>
+<!-- Footer -->
 <footer class="footer">
-    <div class="godoy-housing-inc">©2024 Godoy Housing, Inc. · Privacidad · Terminos · Informacion de la compañia</div>
-    <img class="redes-sociales-1" alt="" src="imagenes/LandingPage/Redes Sociales 1 (1).png">
-</footer>
+    <p>©2024 Godoy Housing, Inc. · <a href="#">Privacidad</a> · <a href="#">Términos</a> · <a href="#">Información de la compañía</a></p>
+  </footer>
+<!-- Vincular al archivo JavaScript -->
+<script src="menuMovil.js"></script>
 </body>
 </html>
