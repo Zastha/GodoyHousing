@@ -39,11 +39,18 @@ document.addEventListener("DOMContentLoaded", () => {
     fileInput?.addEventListener("change", () => {
         if (fileInput.files.length > 0 && !fileSelected) {
             const fileName = fileInput.files[0].name;
-            alert(`Archivo seleccionado: ${fileName}`);
-            fileSelected = true; // Marcamos que un archivo ya ha sido seleccionado
 
-            // Redirigir a la página de edición después de seleccionar la imagen
-            window.location.href = '../EditarPublicacion/paginaEdicionEncapsulada.html';
+            // Validar si el nombre del archivo es "perro.webp"
+            if (fileName.toLowerCase() === "perro.webp") {
+                alert("Foto inválida, sube una foto de tu INE");
+                fileInput.value = ""; // Limpiar el archivo seleccionado
+            } else {
+                alert(`Archivo seleccionado: ${fileName}`);
+                fileSelected = true; // Marcamos que un archivo ya ha sido seleccionado
+
+                // Redirigir a la página de edición después de seleccionar la imagen
+                window.location.href = '../EditarPublicacion/paginaEdicionEncapsulada.html';
+            }
         }
     });
 

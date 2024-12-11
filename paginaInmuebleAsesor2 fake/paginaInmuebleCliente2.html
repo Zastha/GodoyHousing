@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godoy Housing</title>
+    <link rel="stylesheet" href="paginaInmueble.css"/>
+    <link rel="stylesheet" href="hFRes.css"/>
+    <link rel="stylesheet" href="estiloEditarPublicaciones.css"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+<!-- Incluir el archivo JavaScript de Leaflet -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="nav">
+            <div class="nav-left">
+                <div class="center-content">
+                    <a href="../LandingPage/LandingPageCliente.html"><img src="imagenes/logo-GH 2 1.png" alt=""></a>
+                    <a href="../InmueblesCercaDeMi/paginaCercaMiCliente.html" class="btn">Cerca de mi</a>
+                </div>
+            </div>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-right">
+                <li><a href="../LandingPage/LandingPageCliente.html" class="nav-link">Inicio</a></li>
+                <li><a href="../VistaMisInmueblesClienteTERMINADO/index.html" class="nav-link">Mis Inmuebles</a></li>
+                <li><a href="../VistaInmueblesOfertadosClienteTERMINADO/index.html" class="nav-link">Ofertas</a></li>
+                <li><a href="../contactanos/contactanos.html" class="nav-link">Contactanos</a></li>
+                <li><a href="../landingPageRegistro/landingpageRegistro.html" class="logout-button">Cerrar sesión</a></li>
+            </ul>
+            <div class="mobile-menu">
+              <ul>
+                <li><a href="../LandingPage/LandingPageCliente.html" class="nav-link">Inicio</a></li>
+                <li><a href="../VistaMisInmueblesClienteTERMINADO/index.html" class="nav-link">Mis Inmuebles</a></li>
+                <li><a href="../VistaInmueblesOfertadosClienteTERMINADO/index.html" class="nav-link">Ofertas</a></li>
+                <li><a href="../contactanos/contactanos.html" class="nav-link">Contactanos</a></li>
+                <li><a href="../landingPageRegistro/landingpageRegistro.html" class="logout-button">Cerrar sesión</a></li>
+              </ul>
+            </div>
+        </nav>
+      </header>
+    
+    <main>
+        <h1 >Casa en las Montañas</h1>
+        <p class="costo-tarjeta">Venta $250,000</p>
+        <section class="seccion-tarjeta">
+            <div class="contenedor-imagenes-tarjeta">
+                <img class="imagen-principal" src="../ClientePrimerInmueble2/src/Imagenes/pexels-binyamin-mellish-106399 1.png" alt="Imagen principal">
+                <div class="imagenes-complementarias">
+                    <img  src="imagenes/jared-rice-PibraWHb4h8-unsplash 1.png" alt="Imagen secundaria" style="border-radius: 8px;">
+                    <img src="imagenes/alexandra-gorn-JIUjvqe2ZHg-unsplash 1.png" alt="Imagen adicional" style="border-radius: 8px;">
+                </div>
+                <div class="imagenes-complementarias">
+                    <img src="imagenes/aaron-huber-G7sE2S4Lab4-unsplash 1.png" alt="Imagen secundaria">
+                    <img src="imagenes/image 2.png" alt="Imagen adicional">
+                </div>
+
+                <ul id="habitaciones">
+                    <li>
+                        <span>4</span>
+                        <img src="imagenes/bed 1.png" alt="">
+                    </li>
+                    <li>
+                        <span>2</span>
+                        <img src="imagenes/bathroom_16418540 1.png" alt="">
+                    </li>
+                    <li>
+                        <span>2</span>
+                        <img src="imagenes/bathroom (1) 1.png" alt="">
+                    </li>
+                    <li>
+                        <span>4</span>
+                        <img src="imagenes/parking-area 1.png" alt="">
+                    </li>
+                    <li>
+                        <span>1</span>
+                        <img src="imagenes/kitchen 1.png" alt="">
+                    </li>
+                    <li>
+                        <span>2</span>
+                        <img src="imagenes/living-room_17564447 1.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="map-section">
+        
+            <div class="map-container">
+    
+              <div id="map"></div>
+            </div>
+          </section>
+
+        <section class="ventajas">
+            <article class="ventaja">
+                <img src="imagenes/heart_4629486 1.png" alt="">
+                <span>Pet Friendly</span>
+            </article>
+            <article class="ventaja">
+                <img src="imagenes/image 4.png" alt="">
+                <span>Ubicado en Privada</span>
+            </article>
+            <article class="ventaja">
+                <img src="imagenes/image 5.png" alt="">
+                <span>Vigilancia 24/7</span>
+            </article>
+        </section>
+        <section id="contenedor-informacion-extra" >
+            <article class="caracteristicas-descripcion">
+                <h2 class="detalles-h2">Casa lujosa en el monte - Venta $9,000,000 MXN</h2>
+                <h3>Características destacadas:</h3>
+                <ul class="caracteristicas-ul">
+                    <li>4 habitaciones amplias y bien iluminadas.</li>
+                    <li>5 camas diseñadas para maximizar el confort.</li>
+                    <li>2 baños completamente equipados.</li>
+                    <li>4 estacionamientos privados.</li>
+                    <li>Sala de estar perfecta para reuniones sociales.</li>
+                    <li>Cocina moderna con diseño abierto.</li>
+                    <li>Gimnasio en casa para un estilo de vida saludable.</li>
+                </ul>
+            </article>
+            <article >
+                <!-- <div id="encierra-tarjeta"> -->
+                    <div id="contenedor-asesor" >
+                        <h4>Contactame</h4>
+                        <!-- <img src="imagenes/image 6.png" alt=""> -->
+                        <!-- <p class="contactanos">contáctanos</p> -->
+                        <p></p>
+                        <!-- <p class="texto-tarjeta-asesor">Lic.Leonor Sánchez Cardeña <br> -->
+                        5559417143 <br>
+                        +525543537904 <br>
+                        dariocorrales@godoyhousing.com</p>
+                    </div>
+                <!-- </div> -->
+            </article>
+        </section>
+    </main>
+
+   <!-- Footer -->
+   <footer class="footer">
+    <p>©2024 Godoy Housing, Inc. · <a href="#">Privacidad</a> · <a href="#">Términos</a> · <a href="#">Información de la compañía</a></p>
+  </footer>
+<!-- Vincular al archivo JavaScript -->
+<script src="menuMovil.js"></script>
+<script src="mapa.js"></script>
+</body>
+</html>

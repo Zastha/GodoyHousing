@@ -30,14 +30,7 @@ body{
   background-color: #27ae60; /* Color verde oscuro */
 }
 
-nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  position: relative;
-  width: 100%;
-}
+
 
 .ul1 {
 list-style-type: none;

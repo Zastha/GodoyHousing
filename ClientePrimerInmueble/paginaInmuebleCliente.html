@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Vincular al archivo CSS -->
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="hFRes.css"/>
-
+  <link rel="stylesheet" href="hFRes.css">
+  <link rel="stylesheet" href="../VistaMisInmueblesClienteTERMINADO/hFResUsuario.css"> 
+   <link rel="stylesheet" href="../VistaMisInmueblesClienteTERMINADO/styles.css"/> 
+  
+  
   <!-- Fuente Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -44,11 +47,16 @@
         </div>
     </nav>
   </header>
+  
+  <section class="main">
+    <div class="container">
+      <h1>Tus Bienes Inmuebles:</h1>
+      <!-- <ul class="nav-right"><li id="Asesoria"><a href="#" class="nav-link contactanos">Necesitas ayuda? 😉</a></li></ul> -->
+      <a href="../contactanos/contactanos.html" class="nav-right nav-link contactanos" style="background: none;"><h1 id="Asesoria">Necesitas ayuda? 😉</h1></a> 
 
 
   <!-- Contenido Principal -->
   <main class="main-content">
-    <h1>Tus Inmuebles:</h1>
     <div class="property-card">
       <div class="add-property" id="addPropertyBtn">
         <img src="imagenes/add-icon.png" alt="Añadir Inmueble" class="add-icon">
@@ -74,11 +82,8 @@
   <p>©2024 Godoy Housing, Inc. · <a href="#">Privacidad</a> · <a href="#">Términos</a> · <a href="#">Información de la compañía</a></p>
 </footer>
 <!-- Vincular al archivo JavaScript -->
-<script src="menuMovil.js"></script>
 
-
-
-
+<script src="../HeaderFooterResponsivo/menuMovil.js"></script>
   <script src="ventanaEmergente.js"></script>
 
 </body>

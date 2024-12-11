@@ -44,11 +44,11 @@ document.addEventListener("DOMContentLoaded", () => {
             const user = users.find(user => user.email === email && user.password === password);
 
             if (user) {
-                if (user.email === "cliente@gh.com") {
+                if (user.email === "victor.bb@gmail.com") {
                     window.location.href = "../LandingPage/LandingpageCliente.html";
-                } else if (user.email === "admin@gh.com") {
+                } else if (user.email === "normaGodoy@gh.com") {
                     window.location.href = "../AdministradorInicio/InicioAdmin.html";
-                } else if (user.email === "asesor@gh.com") {
+                } else if (user.email === "josueCelaya@gh.com") {
                     window.location.href = "../VistaVentanaCitaAgendaTERMINADO/index.html";
                 }
             } else {
